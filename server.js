@@ -28,7 +28,7 @@ const server = http.createServer(app);
 
 // Middleware
 app.use(cors({
-  origin: "http://localhost:5173", // Adjust based on your frontend URL
+  origin: "*", // Adjust based on your frontend URL
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
